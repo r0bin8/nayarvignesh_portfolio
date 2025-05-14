@@ -16,7 +16,7 @@ export function HeroSection() {
         <div className="max-w-xl animate-fade-in">
           <div className="inline-flex items-center px-3 py-1 mb-6 text-sm rounded-full bg-accent2/10 border border-accent2/20">
             <span className="animate-pulse mr-2 h-2 w-2 rounded-full bg-accent2"></span>
-            <span className="text-accent2">Developer & IoT Enthusiast</span>
+            <span className="text-accent2">Developer</span>
           </div>
           
           <h1 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight">
