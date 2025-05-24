@@ -13,7 +13,7 @@ export function ProjectsSection() {
       title: "VZT Tools Web Application",
       description:
         "Multi-feature web app: language conversion, QR code generation, image creation, and voice-to-text integration. Focus on accessibility and interactive UX.",
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
       category: "web",
       technologies: ["HTML", "CSS", "JavaScript", "APIs"],
       demo: "#",
@@ -23,7 +23,7 @@ export function ProjectsSection() {
       title: "Cyclone Detection System",
       description:
         "AI-based system using YOLO object detection. Trained on satellite images for cyclone pattern recognition.",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop",
+      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=600&fit=crop",
       category: "ai",
       technologies: ["Python", "YOLO", "Computer Vision"],
       demo: "#",
@@ -33,7 +33,7 @@ export function ProjectsSection() {
       title: "Smart Classroom IoT System",
       description:
         "IoT-based smart classroom for energy saving. Implemented sensors and automation for efficient resource management.",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=800&h=600&fit=crop",
+      image: "https://images.unsplash.com/photo-1497171156029-51dfc973e5f9?w=800&h=600&fit=crop",
       category: "iot",
       technologies: ["IoT", "Arduino", "Sensors", "Cloud"],
       demo: "#",
@@ -43,7 +43,7 @@ export function ProjectsSection() {
       title: "Parking Management System",
       description:
         "Parking Management System using OpenCV and AR. Real-time monitoring and space allocation for efficient parking.",
-      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=800&h=600&fit=crop",
+      image: "https://images.unsplash.com/photo-1506521781263-d8422e82f27a?w=800&h=600&fit=crop",
       category: "ar",
       technologies: ["OpenCV", "AR", "Python", "Mobile"],
       demo: "#",

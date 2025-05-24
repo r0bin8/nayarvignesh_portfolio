@@ -98,7 +98,7 @@ export function AboutSection() {
             <Card className="border-2 border-accent1/20 overflow-hidden bg-card/50 backdrop-blur-sm">
               <CardContent className="p-0">
                 <img
-                  src="/placeholder.svg"
+                  src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=600&fit=crop"
                   alt="Nayar Vignesh"
                   className="w-full h-96 object-cover"
                 />
