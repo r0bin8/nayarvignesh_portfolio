@@ -1,5 +1,5 @@
 
-import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowRight, Github, Linkedin, Mail, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -44,6 +44,16 @@ export function HeroSection() {
             <Button size="lg" variant="outline" className="border-accent1/20 hover:bg-accent1/10 hover:border-accent1/30 transition-all">
               <a href="#projects" className="flex items-center">
                 View My Projects <ArrowRight className="ml-2 h-4 w-4" />
+              </a>
+            </Button>
+            <Button size="lg" variant="outline" className="border-accent2/20 hover:bg-accent2/10 hover:border-accent2/30 transition-all">
+              <a 
+                href="https://i.postimg.cc/fLk4BSvj/vignesh-Resume.png" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center"
+              >
+                <Download className="mr-2 h-4 w-4" /> Resume
               </a>
             </Button>
           </div>
