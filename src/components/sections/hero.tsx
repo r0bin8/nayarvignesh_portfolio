@@ -106,7 +106,7 @@ export function HeroSection() {
             <div className="absolute inset-4 rounded-full bg-background/80 backdrop-blur-sm p-2 z-10">
               <div className="w-full h-full rounded-full overflow-hidden border-4 border-foreground/10">
                 <img
-                  src="https://i.postimg.cc/QtQ3Hn91/IMG-20250425-172520-1.jpg"
+                  src="https://i.postimg.cc/KvjWWfBB/IMG-9109-removebg-preview.jpg"
                   alt="Nayar Vignesh"
                   className="w-full h-full object-cover"
                 />
