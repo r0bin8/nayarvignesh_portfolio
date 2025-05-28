@@ -1,4 +1,3 @@
-
 import { Mail, Phone, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -6,6 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { useState } from "react";
 import { toast } from "@/components/ui/use-toast";
+import emailjs from '@emailjs/browser';
 
 export function ContactSection() {
   const [formData, setFormData] = useState({
@@ -13,6 +13,7 @@ export function ContactSection() {
     email: "",
     message: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -22,16 +23,47 @@ export function ContactSection() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Simulate form submission
-    console.log("Form submitted:", formData);
-    toast({
-      title: "Message sent",
-      description: "Thank you for your message. I'll get back to you soon!",
-      duration: 5000,
-    });
-    setFormData({ name: "", email: "", message: "" });
+    setIsSubmitting(true);
+
+    try {
+      // Initialize EmailJS with public key
+      emailjs.init("skDpIzSYfQArL00YI");
+
+      // Send email using EmailJS
+      const result = await emailjs.send(
+        'service_cwzteya', // Your service ID
+        'template_e8l2cnf', // Your template ID
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+          to_name: 'Vignesh', // You can customize this
+        }
+      );
+
+      console.log('Email sent successfully:', result);
+      
+      toast({
+        title: "Message sent successfully!",
+        description: "Thank you for your message. I'll get back to you soon!",
+        duration: 5000,
+      });
+      
+      setFormData({ name: "", email: "", message: "" });
+    } catch (error) {
+      console.error('Email sending failed:', error);
+      
+      toast({
+        title: "Failed to send message",
+        description: "Please try again or contact me directly via email.",
+        variant: "destructive",
+        duration: 5000,
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactInfo = [
@@ -124,6 +156,7 @@ export function ContactSection() {
                         value={formData.name}
                         onChange={handleChange}
                         required
+                        disabled={isSubmitting}
                       />
                     </div>
                     <div className="space-y-2">
@@ -138,6 +171,7 @@ export function ContactSection() {
                         value={formData.email}
                         onChange={handleChange}
                         required
+                        disabled={isSubmitting}
                       />
                     </div>
                   </div>
@@ -153,13 +187,15 @@ export function ContactSection() {
                       value={formData.message}
                       onChange={handleChange}
                       required
+                      disabled={isSubmitting}
                     />
                   </div>
                   <Button 
                     type="submit" 
                     className="w-full sm:w-auto bg-accent2 hover:bg-accent2/90"
+                    disabled={isSubmitting}
                   >
-                    Send Message
+                    {isSubmitting ? "Sending..." : "Send Message"}
                   </Button>
                 </form>
               </CardContent>
