@@ -102,13 +102,13 @@ export function HeroSection() {
             {/* Rotating border effect */}
             <div className="absolute inset-0 rounded-full border-2 border-dashed border-accent2/50 animate-[spin_20s_linear_infinite]"></div>
             
-            {/* Profile image container */}
-            <div className="absolute inset-4 rounded-full bg-background/80 backdrop-blur-sm p-2 z-10">
+            {/* Profile image container with transparent/dark background */}
+            <div className="absolute inset-4 rounded-full bg-black/20 backdrop-blur-sm p-2 z-10">
               <div className="w-full h-full rounded-full overflow-hidden border-4 border-foreground/10">
                 <img
                   src="https://i.postimg.cc/KvjWWfBB/IMG-9109-removebg-preview.jpg"
                   alt="Nayar Vignesh"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover bg-transparent"
                 />
               </div>
             </div>
