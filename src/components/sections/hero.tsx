@@ -48,7 +48,7 @@ export function HeroSection() {
             </Button>
             <Button size="lg" variant="outline" className="border-accent2/20 hover:bg-accent2/10 hover:border-accent2/30 transition-all">
               <a 
-                href="https://i.postimg.cc/fLk4BSvj/vignesh-Resume.png" 
+                href="https://drive.google.com/file/d/1P1fDA-8xysEOQMnOVNpGQaBW9jkOXf3k/view?usp=drive_link" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center"

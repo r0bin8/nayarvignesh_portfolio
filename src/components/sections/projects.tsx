@@ -33,7 +33,7 @@ export function ProjectsSection() {
       title: "Smart Classroom IoT System",
       description:
         "IoT-based smart classroom for energy saving. Implemented sensors and automation for efficient resource management.",
-      image: "https://images.unsplash.com/photo-1497171156029-51dfc973e5f9?w=800&h=600&fit=crop",
+      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop",
       category: "iot",
       technologies: ["IoT", "Arduino", "Sensors", "Cloud"],
       demo: "#",
