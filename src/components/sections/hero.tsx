@@ -60,7 +60,7 @@ export function HeroSection() {
           
           <div className="flex items-center gap-4">
             <a 
-              href="https://github.com/" 
+              href="https://github.com/r0bin8" 
               target="_blank" 
               rel="noreferrer" 
               className={cn(
@@ -71,7 +71,7 @@ export function HeroSection() {
               <Github size={20} className="text-foreground/80" />
             </a>
             <a 
-              href="https://linkedin.com/" 
+              href="https://www.linkedin.com/in/vignesh-nayar-019a20243" 
               target="_blank" 
               rel="noreferrer" 
               className={cn(

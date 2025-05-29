@@ -1,5 +1,6 @@
 
 import { Link } from "react-router-dom";
+import { Github, Linkedin } from "lucide-react";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -57,18 +58,24 @@ export function Footer() {
             © {currentYear} Nayar Vignesh. All rights reserved.
           </p>
           <div className="flex space-x-4 mt-4 md:mt-0">
-            {["github", "linkedin", "twitter", "instagram"].map(
-              (social) => (
-                <a
-                  key={social}
-                  href="#"
-                  className="text-foreground/70 hover:text-accent1 transition-colors"
-                >
-                  <span className="sr-only">{social}</span>
-                  {/* Add social icons here if needed */}
-                </a>
-              )
-            )}
+            <a
+              href="https://github.com/r0bin8"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground/70 hover:text-accent1 transition-colors"
+            >
+              <Github size={20} />
+              <span className="sr-only">GitHub</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/vignesh-nayar-019a20243"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground/70 hover:text-accent1 transition-colors"
+            >
+              <Linkedin size={20} />
+              <span className="sr-only">LinkedIn</span>
+            </a>
           </div>
         </div>
       </div>

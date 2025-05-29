@@ -1,4 +1,5 @@
-import { Mail, Phone, MapPin } from "lucide-react";
+
+import { Mail, Phone, MapPin, Github, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -124,18 +125,24 @@ export function ContactSection() {
             <div className="mt-8">
               <h3 className="text-lg font-semibold mb-4">Follow Me</h3>
               <div className="flex space-x-4">
-                {["github", "linkedin", "twitter", "instagram"].map(
-                  (social) => (
-                    <a
-                      key={social}
-                      href="#"
-                      className="w-10 h-10 rounded-full bg-card border border-border flex items-center justify-center hover:border-accent1 transition-colors"
-                    >
-                      <span className="sr-only">{social}</span>
-                      {/* Add social icons here */}
-                    </a>
-                  )
-                )}
+                <a
+                  href="https://github.com/r0bin8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-card border border-border flex items-center justify-center hover:border-accent1 transition-colors"
+                >
+                  <Github size={20} className="text-foreground/80" />
+                  <span className="sr-only">GitHub</span>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/vignesh-nayar-019a20243"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-card border border-border flex items-center justify-center hover:border-accent1 transition-colors"
+                >
+                  <Linkedin size={20} className="text-foreground/80" />
+                  <span className="sr-only">LinkedIn</span>
+                </a>
               </div>
             </div>
           </div>
